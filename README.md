@@ -10,7 +10,21 @@ It uses a completely black background to increase the contrast between backgroun
 
 Screenshots
 -----------
-Coming soon™
+
+### Full-color
+![](./screenshots/full_color.png)
+
+### 256-color
+![](./screenshots/256_color.png)
+
+### `vimdiff`
+![](./screenshots/vimdiff.png)
+
+### Spelling/Syntastic (with underline support)
+![](./screenshots/spelling_underline.png)
+
+### Spelling/Syntastic (no underline support)
+![](./screenshots/spelling_background.png)
 
 
 Setup
