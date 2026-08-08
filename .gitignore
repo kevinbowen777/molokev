@@ -1,0 +1,12 @@
+vim/sessions
+MANIFEST
+build
+dist
+_build
+*.bak
+.DS_Store
+*.swp
+*~
+*.log
+default.vim
+gvim.vim
