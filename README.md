@@ -1,7 +1,7 @@
-molokai-dark theme for Vim
-==========================
+molokev - a dark theme for Vim
+==============================
 
-Molokai-dark is a darker and re-worked version of the [Molokai theme by @tomasr](https://github.com/tomasr/molokai).
+Molokev is re-worked version of the [Molokai-dark theme by @pR0Ps](https://github.com/pR0Ps/molokai-dark).
 
 It uses a completely black background to increase the contrast between background and text.
 
@@ -31,7 +31,7 @@ Setup
 -----
 Install it via your preferred Vim plugin installation method and configure it in your `~/.vimrc`:
 ```vim
-colorscheme molokai-dark
+colorscheme molokev
 ```
 
 Options
@@ -45,10 +45,10 @@ if you're running `vim` in a terminal, it will not. These assumptions can be cha
 following variables in your `~/.vimrc` (defaults shown):
 
 ```vim
-let g:molokaidark_undercolor_gui = 1
-let g:molokaidark_undercolor_cterm = 0
+let g:molokev_undercolor_gui = 1
+let g:molokev_undercolor_cterm = 0
 
-colorscheme molokai-dark
+colorscheme molokev
 ```
 
 License

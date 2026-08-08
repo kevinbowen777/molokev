@@ -1,4 +1,9 @@
-"molokai-dark theme for Vim
+" local syntax file - set colors on a per-machine basis:
+" vim: tw=0 ts=4 sw=4
+" Vim color file
+" molokev theme for Vim
+" Maintainer:	Kevin Bowen <kevin.bowen@gmail.com>
+" Last Change:	2026 Jul 30
 
 "Set background and reset existing colours
 set background=dark
@@ -7,10 +12,10 @@ if exists("syntax_on")
   syntax reset
 endif
 
-let g:colors_name="molokai-dark"
+let g:colors_name="molokev"
 
 
-hi Normal               guifg=#FFFFFF guibg=#000000 gui=NONE      ctermfg=15   ctermbg=16   cterm=NONE
+hi Normal               guifg=CadetBlue guibg=#000000 gui=NONE      ctermfg=72   ctermbg=16   cterm=NONE
 hi Cursor               guifg=bg      guibg=fg                    ctermfg=bg   ctermbg=fg
 hi iCursor              guifg=bg      guibg=fg                    ctermfg=bg   ctermbg=fg
 hi VisualNOS                          guibg=#403D3D                            ctermbg=238
@@ -19,8 +24,9 @@ hi CursorLine                         guibg=#1C1C1C gui=NONE                   c
 hi CursorColumn                       guibg=#1C1C1C                            ctermbg=234
 
 hi Constant             guifg=#AE81FF                             ctermfg=141
- hi String              guifg=#FFDF5F                             ctermfg=221
- hi Character           guifg=#FFDF5F                             ctermfg=221
+hi Constant             guifg=#AE81FF                             ctermfg=141
+ hi String              guifg=#FFE680                             ctermfg=221
+ hi Character           guifg=#FFE680                             ctermfg=221
  hi Number              guifg=#AE81FF                             ctermfg=141
  hi Boolean             guifg=#AE81FF                             ctermfg=141
  hi Float               guifg=#AE81FF                             ctermfg=141
@@ -44,21 +50,21 @@ hi PreProc              guifg=#A6E22E                             ctermfg=154
 
 hi Type                 guifg=#66D9EF               gui=NONE      ctermfg=81                cterm=NONE
  hi StorageClass        guifg=#FD971F                             ctermfg=208
- hi Structure           guifg=#66D9EF                             ctermfg=81
+ hi Structure           guifg=#6699ff                             ctermfg=81
  hi Typedef             guifg=#66D9EF                             ctermfg=81
 
 hi Special              guifg=#66D9EF                             ctermfg=81
  hi SpecialChar         guifg=#F92672               gui=bold      ctermfg=197               cterm=bold
  hi Tag                 guifg=#F92672                             ctermfg=197
  hi Delimiter           guifg=#8F8F8F                             ctermfg=246
- hi SpecialComment      guifg=#7E8E91               gui=bold      ctermfg=245               cterm=bold
+ hi SpecialComment      guifg=#2B506E               gui=bold      ctermfg=245               cterm=bold
  hi Debug               guifg=#BCA3A3               gui=bold      ctermfg=225               cterm=bold
 
 "Bold and underline matching parens instead of highlighting them.
 "This makes it easier to tell the difference between the cursor and the matching paren.
 hi MatchParen           guibg=NONE                  gui=underline,bold         ctermbg=NONE cterm=underline,bold
 
-hi Comment              guifg=#7E8E91                             ctermfg=102
+hi Comment              guifg=#2B506E                             ctermfg=102
 hi Todo                 guifg=fg      guibg=bg      gui=bold      ctermfg=fg   ctermbg=bg   cterm=bold
 hi Underlined           guifg=NONE                  gui=underline ctermfg=NONE              cterm=underline
 
@@ -79,9 +85,11 @@ hi TabLine              guifg=#808080 guibg=#1B1D1E gui=NONE      ctermfg=244  c
 hi TabLineSel           guifg=#808080 guibg=#5F6061 gui=bold      ctermfg=244  ctermbg=59   cterm=bold
 
 " UI - window
-hi LineNr               guifg=#465457 guibg=#232526               ctermfg=239  ctermbg=235
+hi LineNr               guifg=#00e600 guibg=#181a1b               ctermfg=239  ctermbg=235
+" hi LineNr               guifg=#465457 guibg=#232526               ctermfg=239  ctermbg=235
 hi CursorLineNr         guifg=#FD971F guibg=#1C1C1C gui=NONE      ctermfg=208  ctermbg=234  cterm=NONE
-hi SignColumn                         guibg=#232526                            ctermbg=235
+hi SignColumn                         guibg=#181a1b                            ctermbg=235
+" hi SignColumn                         guibg=#232526                            ctermbg=235
 hi VertSplit            guifg=#808080 guibg=#080808 gui=bold      ctermfg=244  ctermbg=232  cterm=bold
 hi ColorColumn                        guibg=#232526                            ctermbg=236
 
@@ -103,7 +111,9 @@ hi Error                guifg=fg      guibg=#F92672               ctermfg=fg   c
 hi ErrorMsg             guifg=#F92672 guibg=bg      gui=bold      ctermfg=197  ctermbg=bg   cterm=bold
 hi WarningMsg           guifg=#FFDF5F guibg=bg      gui=bold      ctermfg=221  ctermbg=bg   cterm=bold
 hi Question             guifg=#66D9EF                             ctermfg=81
-hi Title                guifg=#FD971F                             ctermfg=208
+" hi Title                guifg=#FD971F                             ctermfg=208
+" hi Title	term=bold   guifg=Magenta               gui=bold	  ctermfg=Magenta
+hi Title	term=bold   guifg=#FF00FF               gui=bold	  ctermfg=201
 
 
 " Special cases
@@ -136,13 +146,13 @@ if has("spell")
         hi SpellRare                                              ctermul=221
     endif
     " If colored underlines/curls aren't known to be supported set a bg color as a fallback
-    if exists("g:molokaidark_undercolor_gui") && !g:molokaidark_undercolor_gui
+    if exists("g:molokev_undercolor_gui") && !g:molokev_undercolor_gui
         hi SpellBad                   guibg=#4A0B22
         hi SpellCap                   guibg=#332C13
         hi SpellLocal                 guibg=#332C13
         hi SpellRare                  guibg=#332C13
     endif
-    if !exists("g:molokaidark_undercolor_cterm") || !g:molokaidark_undercolor_cterm
+    if !exists("g:molokev_undercolor_cterm") || !g:molokev_undercolor_cterm
         hi SpellBad                                                            ctermbg=52
         hi SpellCap                                                            ctermbg=58
         hi SpellLocal                                                          ctermbg=58
