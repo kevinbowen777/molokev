@@ -11,14 +11,17 @@ It uses a completely black background to increase the contrast between backgroun
 Screenshots
 -----------
 
-### Full-color
-![](./screenshots/full_color.png)
+### Python
+![](./screenshots/python_256_color.png)
 
-### 256-color
-![](./screenshots/256_color.png)
+### Bash
+![](./screenshots/bash_256_color.png)
 
-### `vimdiff`
-![](./screenshots/vimdiff.png)
+### vimrc
+![](./screenshots/vimrc_256_color.png)
+
+### toml
+![](./screenshots/toml_256_color.png)
 
 ### Spelling/Syntastic (with underline support)
 ![](./screenshots/spelling_underline.png)
@@ -29,7 +32,7 @@ Screenshots
 
 Setup
 -----
-Install it via your preferred Vim plugin installation method and configure it in your `~/.vimrc`:
+Install this colorscheme via your preferred Vim plugin installation method and configure it in your `~/.vimrc`:
 ```vim
 colorscheme molokev
 ```
